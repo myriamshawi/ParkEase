@@ -17,6 +17,12 @@ function Navigation() {
                         <li className="nav-item fs-5"> {/* Increase font size */}
                             <a className="nav-link active" aria-current="page" href="/home">Home</a>
                         </li>
+                        <li className="nav-item fs-5"> {/* Increase font size */}
+                            <a className="nav-link active" aria-current="page" href="/about">About Us</a>
+                        </li>
+                        <li className="nav-item fs-5"> {/* Increase font size */}
+                            <a className="nav-link active" aria-current="page" href="/contact">Contact Us</a>
+                        </li>
                         {/* Add more nav items here */}
                     </ul>
                 </div>
