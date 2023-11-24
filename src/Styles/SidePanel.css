@@ -1,0 +1,21 @@
+/* SidePanel.css */
+
+.sidebar {
+    width: 25%; /* or whatever width you prefer */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute; /* Positioned absolutely to fill the space */
+    top: 56px; /* Assuming the NavBar is 56px */
+    bottom: 56px; /* Assuming the Footer is 56px */
+    overflow-y: auto; /* Scroll if the content overflows */
+}
+
+.payment-card, .feedback-card {
+    border-color: #5bc0de;
+    flex-grow: 1; /* Allows this card to grow and fill space */
+}
+
+.feedback-card {
+    flex-grow: 1; /* Allows this card to grow and fill space */
+}
