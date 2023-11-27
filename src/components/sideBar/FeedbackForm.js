@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../Styles/FeedbackForm.css'
 
 const FeedbackForm = () => {
     const [rating, setRating] = useState(0);

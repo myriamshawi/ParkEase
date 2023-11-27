@@ -1,15 +1,14 @@
-/* MainSection.css */
-
 .main-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    flex-grow: 1; /* Ensure that it takes up the remaining space */
+    margin-left: 35%; /* Offset by the width of the sidebar */
+    width: 65%; /* Takes up the remaining space */
+    position: fixed;
+    top:80px; /* Adjust based on NavigationBar's height */
+    bottom: 56px; /* Adjust based on Footer's height */
+    overflow-y: hidden; /* No scrolling needed */
 }
 
 .welcome-card {
-    width: 100%; /* Make the card width equal to MainSection width */
+    width: 99%; /* Make the card width equal to MainSection width */
     margin-bottom: 1rem; /* Add space below the card */
 }
 
@@ -19,14 +18,14 @@
     margin-bottom: 1rem;
 }
 
-/* Adjust the SearchBar component's styles if needed */
 .search-bar {
     margin-bottom: 2rem; /* Spacing before the map area */
 }
 
-/* Ensure the MapArea fills the rest of the space */
-.map-area {
-    width: 100%;
-    /* Set a minimum height or make it responsive based on your needs */
-    min-height: 500px;
+.centered-map {
+    height: 70%;
+    width: 80%;
+    margin: auto; /* Centers the MapContainer horizontally */
+    display: block; /* Use block display for proper margin handling */
 }
+

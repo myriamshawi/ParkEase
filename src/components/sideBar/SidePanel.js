@@ -1,22 +1,23 @@
 import React from 'react';
 import PaymentInterface from './PaymentInterface';
 import FeedbackForm from './FeedbackForm';
-import {Card} from "react-bootstrap";
+import '../../Styles/SidePanel.css'
 
 const SidePanel = () => {
     return (
         <div className="sidebar d-flex flex-column">
-            <Card className="payment-card mb-4">
-                <Card.Body>
+            <div className="card mb-4">
+                <div className="card-body">
                     <PaymentInterface />
-                </Card.Body>
-            </Card>
-            <Card className="feedback-card">
-                <Card.Body>
+                </div>
+            </div>
+            <div className="card">
+                <div className="card-body">
                     <FeedbackForm />
-                </Card.Body>
-            </Card>
+                </div>
+            </div>
         </div>
+
     );
 };
 

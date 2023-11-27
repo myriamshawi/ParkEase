@@ -1,9 +1,9 @@
 import React from 'react';
-import MapArea from './MapArea'; // Assuming MapArea is your main content
-import '../Styles/MainSection.css';
+import MapArea from './MapArea';
+import '../../Styles/MainSection.css';
 import SearchBar from "./SearchBar";
 import ParkingDetails from "./ParkingDetails";
-import {Card} from "react-bootstrap"; // Custom CSS for MainSection
+import {Card} from "react-bootstrap";
 
 // This is where you'd retrieve parking spots data, perhaps from API or state
 const parkingSpots = [

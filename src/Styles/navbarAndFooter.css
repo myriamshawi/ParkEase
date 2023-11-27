@@ -1,0 +1,29 @@
+/* NavigationBar.css */
+.top-bar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1030; /* High z-index to keep it above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow for depth */
+}
+
+.container {
+    max-width: 100%; /* Ensures the container takes full width if needed */
+}
+
+
+/* Footer.css */
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1030;
+    background-color: #f8f9fa; /* Match Bootstrap's default navbar color */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow for depth */
+    /* Add any additional styling that matches your navigation bar */
+}
+/* Footer content styling */
+.footer-content {
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    /* Style text, links, or other elements within your footer here */
+}
