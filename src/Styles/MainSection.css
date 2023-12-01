@@ -1,25 +1,49 @@
 .main-section {
-    margin-left: 35%; /* Offset by the width of the sidebar */
-    width: 65%; /* Takes up the remaining space */
+    width: 75%; /* Takes up the remaining space */
     position: fixed;
     top:80px; /* Adjust based on NavigationBar's height */
     bottom: 56px; /* Adjust based on Footer's height */
     overflow-y: hidden; /* No scrolling needed */
-}
-
-.welcome-card {
-    width: 99%; /* Make the card width equal to MainSection width */
-    margin-bottom: 1rem; /* Add space below the card */
+    justify-content: center; /* Centers content vertically */
+    align-items: center;
+    flex-direction: column; /* Stacks children vertically */
 }
 
 .welcome-message {
-    font-size: 2rem; /* Large font size for the welcome message */
+    flex: 1; /* Allows welcome message to grow and use up available space */
+    font-size: 2rem;
     color: #333333;
-    margin-bottom: 1rem;
+    text-align: left; /* Aligns text to the left */
+    margin-right: 1rem; /* Adds space between message and parking spots */
+}
+.welcome-card .card-body {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Aligns children with space between them */
+    align-items: flex-start; /* Aligns items to the top */
 }
 
+.welcome-and-search {
+    /* Container for the welcome message and search bar, taking necessary space */
+    flex-basis: 50%; /* Adjust the width as necessary */
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+}
+
+.available-spots {
+    /* Adjust the width as necessary, or use flex-basis if you want it to be flexible */
+    width: 50%;
+}
+
+/* Adjust the SearchBar component's container */
+.search-bar-container {
+    /* If you are using this class to wrap the SearchBar component */
+    margin-top: 1rem; /* Adds some space from the welcome message */
+    align-self: center; /* Centers it within the welcome-and-search container */
+}
+
+/* Ensure the SearchBar itself does not stretch too wide */
 .search-bar {
-    margin-bottom: 2rem; /* Spacing before the map area */
+    width: 100%; /* Adjust this to control the dropdown width */
 }
 
 .centered-map {

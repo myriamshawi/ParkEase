@@ -1,11 +1,30 @@
-import React, {useState} from "react";
+import React from "react";
 import "../login/Form.css";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+
 
 const Form = () => {
+    const navigate = useNavigate();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        // Show a SweetAlert2 popup
+        await Swal.fire({
+            title: 'Success!',
+            text: 'User added successfully!',
+            icon: 'success',
+            confirmButtonText: 'Ok'
+        });
+
+        // Navigate to the login page after the user dismisses the popup
+        navigate("/login");
+    };
 
     return (
         <div className="mx-4 my-2">
-            <form method="post" >
+            <form method="post" onSubmit={handleSubmit}>
                 <div className="input-group col-lg mt-3 my-md-none">
                     <label htmlFor="username" className="input-group-text">
                         <i className="bi bi-person"></i>
@@ -40,11 +59,10 @@ const Form = () => {
                         type="submit"
                         className="btn btn-lg btn-outline-dark"
                         id="usersubmit"
-                        rows="3"
-                        value={"Sign Up!"}
+                        value="Sign Up!"
                     />
                 </div>
-                <hr></hr>
+                <hr />
             </form>
         </div>
     );

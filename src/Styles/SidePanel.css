@@ -1,5 +1,6 @@
 .sidebar {
-    width: 35%;
+    margin-left: 75%;
+    width: 25%;
     position: fixed;
     top:80px; /* Adjust based on NavigationBar's height */
     bottom: 56px; /* Adjust based on Footer's height */

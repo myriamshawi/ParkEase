@@ -3,12 +3,12 @@ import PaymentInterface from './PaymentInterface';
 import FeedbackForm from './FeedbackForm';
 import '../../Styles/SidePanel.css'
 
-const SidePanel = () => {
+const SidePanel = ({ selectedSpot, onPaymentComplete }) => {
     return (
         <div className="sidebar d-flex flex-column">
             <div className="card mb-4">
                 <div className="card-body">
-                    <PaymentInterface />
+                    <PaymentInterface selectedSpot={selectedSpot} onPaymentComplete={onPaymentComplete} />
                 </div>
             </div>
             <div className="card">

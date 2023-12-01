@@ -47,17 +47,22 @@ html, body {
 
 /* Sidebar */
 .sidebar {
-  width: 25%; /* quarter of the page */
+  flex: 0 0 25%; /* quarter of the page */
   background-color: #ffffff;
   padding: 1rem;
   overflow-y: auto; /* Allows scrolling */
+  position: fixed;
+  top: 80px; /* Adjust based on NavigationBar's height */
+  bottom: 56px; /* Adjust based on Footer's height */
+  left: 0;
 }
 
 /* Main Section */
 .main-content {
-  width: 75%; /* three quarters of the page */
+  flex: 0 0 75%; /* three quarters of the page */
   padding: 2rem;
   text-align: center;
+  margin-left: 25%; /* Offset by the width of the sidebar */
 }
 
 .welcome-message {
@@ -88,10 +93,7 @@ html, body {
   .sidebar, .main-content {
     width: 100%;
     padding: 1rem;
-  }
-
-  .top-bar, .login-signup, .search-bar, .footer {
-    padding: 0.5rem 1rem;
+    margin-left: 0; /* Reset margin for mobile view */
   }
 }
 

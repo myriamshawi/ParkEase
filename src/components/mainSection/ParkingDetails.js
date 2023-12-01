@@ -1,18 +1,15 @@
 import React from 'react';
 import { ListGroup } from 'react-bootstrap';
 
-const ParkingDetails = ({ parkingSpots }) => {
+const ParkingDetails = ({ parkingSpots, onSelectSpot }) => {
     return (
-        <ListGroup variant="flush">
+        <div>
             {parkingSpots.map(spot => (
-                <ListGroup.Item key={spot.id} className="parking-spot">
-                    <div className="parking-spot-details">
-                        {spot.name} - {spot.distance} - ${spot.price}
-                    </div>
-                </ListGroup.Item>
+                <button key={spot.id} onClick={() => onSelectSpot(spot.id)}>
+                    {spot.name} - {spot.distance} - {spot.price}
+                </button>
             ))}
-        </ListGroup>
+        </div>
     );
 };
-
 export default ParkingDetails;
