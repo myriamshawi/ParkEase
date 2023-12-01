@@ -9,28 +9,50 @@
 
 html, body {
   height: 100%;
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Airbnb Cereal App', 'Arial', sans-serif; 
+   background-color: #f9f9f9; /*Lighter background color */
 }
 
 /* Top Bar */
 .top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1030; /* High z-index to keep it above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow for depth */
+  background-color: #1e90ff; /* Main blue color for the background */
+  color: #fff; /* White text color for better visibility */
 }
 
 .logo {
-  font-size: 1.5rem;
-  color: #333333;
+  font-size: 2rem; /* Increased font size for a more prominent appearance */
+  color: #1e90ff; /* Main blue color */
+  font-weight: bold; /* Bold text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds a smooth transition effect for both transform and box-shadow */
+}
+
+.logo:hover {
+  transform: translateY(-4px) scale(1.1); /* Moves the logo up and slightly scales it on hover, creating a 3D pop-up effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth on hover */
 }
 
 .login-signup {
-  font-size: 1rem;
-  color: #007bff;
+  font-size: 1.2rem; /* Increased font size */
+  color: #008489; /* Airbnb teal color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s, box-shadow 0.3s; /* Adds a smooth transition effect for both color and box-shadow */
+  padding: 0.5rem 1rem; /* Adds padding for a better appearance */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft outer shadow - top left */
+    -4px -4px 8px rgba(255, 255, 255, 0.5), /* Soft inner shadow - bottom right */
+    inset 4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft inner shadow - top left */
+    inset -4px -4px 8px rgba(255, 255, 255, 0.5); /* Soft outer shadow - bottom right */
+}
+
+.login-signup:hover {
+  color: #006c75; /* Darker teal on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced box shadow on hover */
 }
 
 /* Layout Structure */
@@ -47,53 +69,53 @@ html, body {
 
 /* Sidebar */
 .sidebar {
-  flex: 0 0 25%; /* quarter of the page */
-  background-color: #ffffff;
-  padding: 1rem;
-  overflow-y: auto; /* Allows scrolling */
+  flex: 0 0 25%;
+  background-color: #fff;
+  padding: 2rem; /* Increased padding */
+  overflow-y: auto;
   position: fixed;
-  top: 80px; /* Adjust based on NavigationBar's height */
-  bottom: 56px; /* Adjust based on Footer's height */
+  top: 80px;
+  bottom: 56px;
   left: 0;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1); /* Added box shadow */
 }
 
 /* Main Section */
 .main-content {
-  flex: 0 0 75%; /* three quarters of the page */
-  padding: 2rem;
+  flex: 0 0 75%;
+  padding: 3rem; /* Increased padding */
   text-align: center;
-  margin-left: 25%; /* Offset by the width of the sidebar */
+  margin-left: 25%;
 }
 
 .welcome-message {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
+  font-size: 2rem; /* Increased font size */
+  margin-bottom: 1.5rem; /* Increased margin */
   color: #333333;
 }
 
 .search-bar {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   width: 100%;
-  max-width: 500px; /* Limits the width while allowing responsiveness */
-  border: 1px solid #dddddd;
-  border-radius: 20px;
-  margin: 0 auto 2rem auto; /* Center the search bar */
+  max-width: 500px;
+  border: 2px solid #008489; /* Airbnb teal border */
+  border-radius: 30px; /* Increased border radius */
+  margin: 0 auto 3rem auto; /* Increased margin */
 }
 
 /* Footer */
 .footer {
   background-color: #333333;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem; /* Increased padding */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .sidebar, .main-content {
     width: 100%;
-    padding: 1rem;
-    margin-left: 0; /* Reset margin for mobile view */
+    padding: 2rem; /* Increased padding */
+    margin-left: 0;
   }
 }
-
