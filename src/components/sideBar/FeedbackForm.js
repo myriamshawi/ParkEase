@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import '../../Styles/FeedbackForm.css'
+import Swal from 'sweetalert2';
+import '../../Styles/FeedbackForm.css';
+
 
 const FeedbackForm = () => {
     const [rating, setRating] = useState(0);
@@ -7,7 +9,19 @@ const FeedbackForm = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Process feedback submission logic here
+        // Process feedback submission logic here (e.g., send to a server)
+
+        // Display SweetAlert2 message
+        Swal.fire({
+            title: 'Thank you!',
+            text: 'Thank you for your feedback!',
+            icon: 'success',
+            confirmButtonText: 'Ok'
+        }).then(() => {
+            // Reset feedback form
+            setRating(0);
+            setFeedback('');
+        });
     };
 
     return (
@@ -27,3 +41,4 @@ const FeedbackForm = () => {
 };
 
 export default FeedbackForm;
+
