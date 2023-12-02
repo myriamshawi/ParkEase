@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import CreditCardForm from './CreditCardForm';
 import Swal from 'sweetalert2';
+import '../../Styles/PaymentInterface.css';
 
 const PaymentInterface = ({ selectedSpot, onPaymentComplete }) => {
     const [showModal, setShowModal] = useState(false);

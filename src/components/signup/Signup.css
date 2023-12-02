@@ -3,9 +3,47 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 40% !important;
+    width: 40%;
+    background: #f0f0f0; /* Background color with a slight gray tint */
+    padding: 2rem;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow:
+        4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft outer shadow - top left */
+        -4px -4px 8px rgba(255, 255, 255, 0.5), /* Soft inner shadow - bottom right */
+        inset 4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft inner shadow - top left */
+        inset -4px -4px 8px rgba(255, 255, 255, 0.5); /* Soft outer shadow - bottom right */
+}
+
+.signup-box h2 {
+    color: #ff6f61; /* A nice color that matches the theme */
+    margin-bottom: 1rem; /* Adjusted for better spacing */
+}
+
+/* Enhanced button appearance with claymorphism effect */
+.signup-box button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}
+
+.signup-box button:hover {
+    background-color: #1e90ff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #fff;
 }
 
 .signup-box-admin {
-    width: 50% !important;
+    width: 50%;
+    background: #f0f0f0; /* Background color with a slight gray tint */
+    padding: 2rem;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow:
+        4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft outer shadow - top left */
+        -4px -4px 8px rgba(255, 255, 255, 0.5), /* Soft inner shadow - bottom right */
+        inset 4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft inner shadow - top left */
+        inset -4px -4px 8px rgba(255, 255, 255, 0.5); /* Soft outer shadow - bottom right */
 }

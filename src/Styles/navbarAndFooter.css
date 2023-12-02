@@ -5,12 +5,15 @@
     top: 0;
     z-index: 1030; /* High z-index to keep it above other content */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow for depth */
+    background-color: #1e90ff; /* Main blue color for the background */
+    color: #fff; /* White text color for better visibility */
+    height: 80px; /* Adjust the height as needed */
 }
 
 .container {
     max-width: 100%; /* Ensures the container takes full width if needed */
+    padding: 1rem; /* Add padding to the container for a better layout */
 }
-
 
 /* Footer.css */
 .footer {
@@ -18,12 +21,24 @@
     position: fixed;
     bottom: 0;
     z-index: 1030;
-    background-color: #f8f9fa; /* Match Bootstrap's default navbar color */
+    background-color: #1e90ff; /* Main blue color for the background */
+    color: #fff; /* White text color for better visibility */
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow for depth */
-    /* Add any additional styling that matches your navigation bar */
 }
+
 /* Footer content styling */
 .footer-content {
-    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    padding: 1rem; /* Adjust padding as needed */
     /* Style text, links, or other elements within your footer here */
+}
+
+/* Optional: Style links or other elements within the footer */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for text color */
+}
+
+.footer a:hover {
+    color: #f0f0f0; /* Lighter text color on hover for a modern look */
 }
