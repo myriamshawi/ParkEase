@@ -9,8 +9,8 @@
 
 html, body {
   height: 100%;
-  font-family: 'Airbnb Cereal App', 'Arial', sans-serif; 
-   background-color: #f9f9f9; /*Lighter background color */
+  font-family: 'Airbnb Cereal App', 'Arial', sans-serif;
+  background-color: #F0F2F5; /*Lighter background color */
 }
 
 /* Top Bar */
@@ -24,9 +24,10 @@ html, body {
   color: #fff; /* White text color for better visibility */
 }
 
+
 .logo {
   font-size: 2rem; /* Increased font size for a more prominent appearance */
-  color: #1e90ff; /* Main blue color */
+  color: white; /* Main blue color */
   font-weight: bold; /* Bold text */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds a smooth transition effect for both transform and box-shadow */
 }
@@ -44,10 +45,10 @@ html, body {
   padding: 0.5rem 1rem; /* Adds padding for a better appearance */
   border-radius: 8px; /* Rounded corners for a modern look */
   box-shadow:
-    4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft outer shadow - top left */
-    -4px -4px 8px rgba(255, 255, 255, 0.5), /* Soft inner shadow - bottom right */
-    inset 4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft inner shadow - top left */
-    inset -4px -4px 8px rgba(255, 255, 255, 0.5); /* Soft outer shadow - bottom right */
+          4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft outer shadow - top left */
+          -4px -4px 8px rgba(255, 255, 255, 0.5), /* Soft inner shadow - bottom right */
+          inset 4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft inner shadow - top left */
+          inset -4px -4px 8px rgba(255, 255, 255, 0.5); /* Soft outer shadow - bottom right */
 }
 
 .login-signup:hover {
@@ -101,14 +102,6 @@ html, body {
   border: 2px solid #008489; /* Airbnb teal border */
   border-radius: 30px; /* Increased border radius */
   margin: 0 auto 3rem auto; /* Increased margin */
-}
-
-/* Footer */
-.footer {
-  background-color: #333333;
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem; /* Increased padding */
 }
 
 /* Responsive Design */

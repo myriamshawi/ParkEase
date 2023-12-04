@@ -63,9 +63,13 @@ const CreditCardForm = ({ onSubmit }) => {
                 <Form.Control type="text" pattern="\d{3}" placeholder="Enter 3-digit CVV" required />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <Button
+                variant="primary"
+                type="submit"
+                style={{ backgroundColor: '#4c82b9', borderColor: '#4c82b9' }}>
                 Submit
             </Button>
+
         </Form>
     );
 };

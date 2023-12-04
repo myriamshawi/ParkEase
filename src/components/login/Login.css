@@ -4,16 +4,15 @@
     top: 40%;
     transform: translate(-50%, -50%);
     width: 40%;
-    background: #f0f0f0; /* Background color with a slight gray tint */
     padding: 2rem;
     border-radius: 8px; /* Rounded corners for a modern look */
     box-shadow:
-        4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft outer shadow - top left */
-        -4px -4px 8px rgba(255, 255, 255, 0.5), /* Soft inner shadow - bottom right */
-        inset 4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft inner shadow - top left */
-        inset -4px -4px 8px rgba(255, 255, 255, 0.5); /* Soft outer shadow - bottom right */
-}
+            4px 4px 8px rgba(255, 0, 0, 0.3), /* Soft outer shadow - top left (red) */
+            -4px -4px 8px rgba(0, 255, 0, 0.3), /* Soft inner shadow - bottom right (green) */
+            inset 4px 4px 8px rgba(0, 0, 255, 0.3), /* Soft inner shadow - top left (blue) */
+            inset -4px -4px 8px rgba(255, 255, 0, 0.3); /* Soft outer shadow - bottom right (yellow) */
 
+}
 .login-box h2 {
     color: #ff6f61; /* A nice color that matches the theme */
     margin-bottom: 1rem; /* Adjusted for better spacing */

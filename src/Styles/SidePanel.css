@@ -3,9 +3,13 @@
     width: 25%;
     position: fixed;
     top:80px; /* Adjust based on NavigationBar's height */
-    bottom: 56px; /* Adjust based on Footer's height */
+    bottom: auto; /* Adjust based on Footer's height */
     left: 0;
     overflow-y: hidden; /* No scrolling needed */
+    background-color: #F0F2F5; /*Lighter background color */
     /* Add other styling as needed */
-    /* background-color: #33A2FF; Lighter background color */
+}
+.card-body{
+    background-color: #F0F2F5;
+
 }

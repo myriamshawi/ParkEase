@@ -1,23 +1,21 @@
+/* feedback.css */
+
 .feedback-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
     border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 
-        4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft outer shadow - top left */
-        -4px -4px 8px rgba(255, 255, 255, 0.5), /* Soft inner shadow - bottom right */
-        inset 4px 4px 8px rgba(0, 0, 0, 0.1), /* Soft inner shadow - top left */
-        inset -4px -4px 8px rgba(255, 255, 255, 0.5); /* Soft outer shadow - bottom right */
-    background: #fff; /* Consistent background color */
+    background-color: #F0F2F5; /* Light grey that matches your color palette */
     width: 100%; /* Full width within the container */
     border: none; /* Remove the border */
     outline: none; /* Remove the outline (focus border) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Refined box shadow for a cleaner look */
 }
 
 .feedback-form h2 {
     margin-bottom: 1rem;
-    color: #1e90ff; /* Main blue color for the h2 title */
+    color: #4c82b9; /* Main blue color for the h2 title */
     font-weight: bold; /* Enhance the font weight for a modern look */
 }
 
@@ -29,7 +27,7 @@
 
 .feedback-form textarea {
     padding: 0.5rem;
-    border: 1px solid #1e90ff; /* Border color matches the main blue color */
+    border: 1px solid #4c82b9; /* Border color matches the main blue color */
     border-radius: 8px; /* Increased border-radius for a softer look */
     resize: none; /* Allows resizing vertically */
     transition: border-color 0.3s; /* Added border-color transition */
@@ -49,8 +47,7 @@
 }
 
 .feedback-form button:hover {
-    background-color: #1e90ff; /* Main blue color on hover */
+    background-color: #4c82b9; /* Main blue color on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced box shadow on hover */
     color: #fff; /* White text on hover for better visibility */
 }
-

@@ -12,7 +12,7 @@ const NavigationBar = ({ showDropdown }) => {
                         <NavDropdown title="Hello demo123!" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#">Logout</NavDropdown.Item>
                         <NavDropdown.Item href="#">Update account</NavDropdown.Item>
-                        <NavDropdown.Item href="/login">Re-Login</NavDropdown.Item>
+                        <NavDropdown.Item href="/login">Login Page</NavDropdown.Item>
 
                         {/* Add more dropdown items here as needed */}
                         {/* Example: <NavDropdown.Item href="/profile">Profile</NavDropdown.Item> */}

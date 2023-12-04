@@ -15,6 +15,9 @@
     color: #333333;
     text-align: left; /* Aligns text to the left */
     margin-right: 1rem; /* Adds space between message and parking spots */
+    background-color: #F0F2F5; /*Lighter background color */
+    font-family: 'Roboto', sans-serif; /* Or any other modern font */
+    font-weight: 400;
 }
 
 
@@ -22,11 +25,15 @@
     display: flex; /* Enables flexbox layout */
     justify-content: space-between; /* Aligns children with space between them */
     align-items: flex-start; /* Aligns items to the top */
+    background-color: #F0F2F5; /*Lighter background color */
+
 }
 
 .welcome-card {
     border: none; /* Remove the border */
     outline: none; /* Remove the outline (focus border) */
+    background-color: #F0F2F5; /*Lighter background color */
+
 }
 
 .welcome-card select {
@@ -35,6 +42,7 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
+
 }
 
 .welcome-card select:hover {
@@ -55,14 +63,20 @@
 
 .available-spots button {
     padding: 1rem;
+    margin-bottom: 1rem; /* Adds space between the buttons */
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
-    background-color: #1e90ff; /* Main blue color for buttons */
+    background-color: #4c82b9; /* Main blue color for buttons */
     color: #fff; /* White text color for better visibility */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial box shadow for the button */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced box shadow for 3D effect */
+    display: block; /* Ensures the buttons don't sit side by side */
+    width: 70%; /* Makes the button extend full width of its container */
+    margin-right: auto; /* Center align the button if within a flex or block container */
+    margin-left: auto;
 }
+
 
 .available-spots button:hover {
     background-color: grey; /* grey on hover */
@@ -71,7 +85,6 @@
 
 /* Adjust the SearchBar component's container */
 .search-bar-container {
-    /* If you are using this class to wrap the SearchBar component */
     margin-top: 1rem; /* Adds some space from the welcome message */
     align-self: center; /* Centers it within the welcome-and-search container */
 }
