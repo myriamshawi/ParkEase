@@ -34,4 +34,3 @@ A step by step series of examples that tell you how to get a development environ
     ```
    The application will be available at `http://localhost:3000`.
 
-### `npm run build` fails to minify
